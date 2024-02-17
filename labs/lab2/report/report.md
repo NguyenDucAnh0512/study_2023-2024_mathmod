@@ -34,7 +34,7 @@
 2. Введем полярные координаты. Считаем, что полюс - это точка обнаружения лодки 
 браконьеров x~l0~ (theta = x~l0~ = 0), а полярная ось r проходит через точку 
 нахождения катера береговой охраны (Рис.1).
-<p align="center">![pic 1](https://drive.google.com/uc?id=1pWZ6tbjOMdgpg4IRaXwiDnG4u-F7jL4X)
+<p align="center">![pic 1](image/1.png)
 <br>
 Рис.1. Положение катера и лодки в начальный момент времени
 </p>
@@ -58,7 +58,7 @@ dr/dt = v.
 <br>
 Тангенциальная скорость – это линейная скорость вращения катера относительно полюса. Она равна произведению угловой скорости
 d~theta~/dr на радиус r, v~t~ = r*d~theta~/dr
-<p align="center">![pic 2](https://drive.google.com/uc?id=1sOQH0XutNSUezhJhV2Knr46GkjW0R9nB)
+<p align="center">![pic 2](image/2.png)
 <br>
 Рис.2. Разложение скорости катера на тангенциальную и радиальную составляющие
 </p>
@@ -75,17 +75,17 @@ r*d~theta~/dt = 3*sqrt(29)*v/10
 dr/d~theta~ = r/(3*sqrt(29)*v/10)
 
 ## Решать эту уравнению в двух случях:
-<p align="center">![pic 3](https://drive.google.com/uc?id=185bb3EicwWOOWTloOOYVk6zo7h69hLYw)
+<p align="center">![pic 3](image/5.png)
 <br>
-![pic 4](https://drive.google.com/uc?id=1i8V6RQWWLfw84YE_VSO9M59kRWxDow86)
+![pic 4](image/6.png)
 </p>
 
 ## Построить траекторию движения катера и лодки для двух случаев:
 * Перый случай:
-<p align="center">![pic 5](https://drive.google.com/uc?id=1UL3GimKf-q7fn-2jFubSqcsJmheFOvWR)
+<p align="center">![pic 5](image/3.png)
 </p>
 * Второй случай:
-<p align="center">![pic 6](https://drive.google.com/uc?id=1_r2wxJAmClsxiO5VyV5sB0p0v7DAEAun)
+<p align="center">![pic 6](image/4.png)
 </p>
 
 
