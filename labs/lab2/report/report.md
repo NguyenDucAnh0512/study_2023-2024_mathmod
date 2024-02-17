@@ -34,7 +34,7 @@
 2. Введем полярные координаты. Считаем, что полюс - это точка обнаружения лодки 
 браконьеров x~l0~ (theta = x~l0~ = 0), а полярная ось r проходит через точку 
 нахождения катера береговой охраны (Рис.1).
-<p align="center">![pic 1]([image/1.png](https://github.com/NguyenDucAnh0512/study_2023-2024_mathmod/blob/master/labs/lab2/report/image/1.png)){#fig:001 width=70%}
+<p align="center">![pic 1](https://github.com/NguyenDucAnh0512/study_2023-2024_mathmod/blob/master/labs/lab2/report/image/1.png)){#fig:001 width=70%}
 <br>
 Рис.1. Положение катера и лодки в начальный момент времени
 </p>
