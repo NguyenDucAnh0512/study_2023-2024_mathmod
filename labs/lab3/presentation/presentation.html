@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru-RU" xml:lang="ru-RU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Нгуен Дык Ань" />
+  <title>Презентация по лабораторной работе №3</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  
+  
+  
+  
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Презентация по лабораторной работе №3</h1>
+<p class="subtitle">Модель боевых действий (Вариант 12)</p>
+<p class="author">Нгуен Дык Ань</p>
+<p class="date">24 февраля 2024</p>
+</header>
+<h1 id="докладчик">Докладчик</h1>
+<div class="columns" data-align="center">
+<div class="column" style="width:70%;">
+<ul>
+<li>Нгуен Дык Ань</li>
+<li>Студенческий билет: 1032215251</li>
+<li>Группа: НКНбд-01-21</li>
+<li>Российский университет дружбы народов</li>
+<li><a href="https://github.com/NguyenDucAnh0512"
+class="uri">https://github.com/NguyenDucAnh0512</a></li>
+</ul>
+</div><div class="column" style="width:30%;">
+<p><img
+src="https://drive.google.com/uc?id=11Y4Td4A-5Y6xtoE88lvJLn0uziw5GhbB" /></p>
+</div>
+</div>
+<h1 id="цель-работы">Цель работы</h1>
+<p>Изучаем модель боевых действий и построим графики изменения
+численности войск армии x и армии y для каждого случая с помощью
+Scilab</p>
+<h1 id="задание">Задание</h1>
+<p>Между страной Х и страной У идет война. Численность состава войск
+исчисляется от начала войны, и являются временными функциями <span
+class="math inline">\(x(t)\)</span> и <span
+class="math inline">\(x(t)\)</span>. В начальный момент времени страна Х
+имеет армию численностью 50 000 человек, а в распоряжении страны У армия
+численностью в 39 000 человек. Для упрощения модели считаем, что
+коэффициенты <span class="math inline">\(a, b, c, d\)</span> постоянны.
+Также считаем <span class="math inline">\(P(t)\)</span> и <span
+class="math inline">\(Q(t)\)</span> непрерывные функции.</p>
+<h1 id="задание-1">Задание</h1>
+<p>Постройте графики изменения численности войск армии Х и армии У для
+следующих случаев:</p>
+<ol type="1">
+<li>Модель боевых действий между регулярными войсками</li>
+</ol>
+<p><span class="math inline">\(\frac{dx}{dt} = -0,445x(t) - 0.806y(t) +
+sin(t+7) + 1\)</span></p>
+<p><span class="math inline">\(\frac{dy}{dt} = -0,419x(t) - 0.703y(t) +
+cos(t+4) + 1\)</span></p>
+<h1 id="задание-2">Задание</h1>
+<ol start="2" type="1">
+<li>Модель боевых действий с участием регулярных войск ипартизанских
+отрядов</li>
+</ol>
+<p><span class="math inline">\(\frac{dx}{dt} = -0,203x(t) - 0.705y(t) +
+sin(2t)\)</span></p>
+<p><span class="math inline">\(\frac{dy}{dt} = -0,203x(t)y(t) -
+0.801y(t) + 2cos(t)\)</span></p>
+<h1 id="выполнение-задания">Выполнение задания</h1>
+<h2 id="первый-случай">Первый случай:</h2>
+<p>Мы задаём параметры <span class="math inline">\(a, b, c, d\)</span>
+для коеффициентов в функции графика моделя, получаем:</p>
+<p><span class="math inline">\(\frac{dx}{dt} = -ax(t) - by(t) + sin(t+7)
++ 1\)</span></p>
+<p><span class="math inline">\(\frac{dy}{dt} = -cx(t) - hy(t) + cos(t+4)
++ 1\)</span></p>
+<p>где</p>
+<ul>
+<li><span class="math inline">\(a = 0,445 ; h = 0,703\)</span> -
+константа, характеризующая степень влияния различных факторов на
+потери.</li>
+<li><span class="math inline">\(b = 0,806 ; c = 0,419\)</span> -
+эффективность боевых действий армии.</li>
+</ul>
+<p>С помощью Scilab мы можем построить численное решение задачи, получим
+результат:</p>
+<p><img
+src="https://drive.google.com/uc?id=1cJb_5xdg7cHrm002CDUIYsYvqq240t1D" /></p>
+<h1 id="выполнение-задания-1">Выполнение задания</h1>
+<h2 id="второй-случай">Второй случай:</h2>
+<p>Мы делаем также первый случай, мы задаём параметры <span
+class="math inline">\(a, b, c, d\)</span> для коеффициентов в функции
+графика моделя, получаем:</p>
+<p><span class="math inline">\(\frac{dx}{dt} = -ax(t) - by(t) + sin(t+7)
++ 1\)</span></p>
+<p><span class="math inline">\(\frac{dy}{dt} = -cx(t)y(t) - hy(t) +
+cos(t+4) + 1\)</span></p>
+<p>где</p>
+<ul>
+<li><span class="math inline">\(a = 0,203 ; h = 0,801\)</span> -
+константа, характеризующая степень влияния различных факторов на
+потери.</li>
+<li><span class="math inline">\(b = 0,705 ; c = 0,203\)</span> -
+эффективность боевых действий армии.</li>
+</ul>
+<p>N c помощью Scilab мы можем построить численное решение задачи,
+получим результат:</p>
+<p><img
+src="https://drive.google.com/uc?id=1h_O-ElsQz6FAZH9PysQF6v_lcPqjTxKa" /></p>
+<h1 id="вывод">Вывод</h1>
+<p>После лабораторной работе, я познакомился с моделей боевых действий,
+и приобрел практические навыки по построению графика изменения
+численности войск армии.</p>
+</body>
+</html>
