@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru-RU" xml:lang="ru-RU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Нгуен Дык Ань" />
+  <title>Презентация по лабораторной работе №4</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  
+  
+  
+  
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Презентация по лабораторной работе №4</h1>
+<p class="subtitle">Модель гармонических колебаний (Вар. 12)</p>
+<p class="author">Нгуен Дык Ань</p>
+<p class="date">1 марта 2024</p>
+</header>
+<h1 id="докладчик">Докладчик</h1>
+<div class="columns" data-align="center">
+<div class="column" style="width:70%;">
+<ul>
+<li>Нгуен Дык Ань</li>
+<li>Студенческий билет: 1032215251</li>
+<li>Группа: НКНбд-01-21</li>
+<li>Российский университет дружбы народов</li>
+<li><a href="https://github.com/NguyenDucAnh0512"
+class="uri">https://github.com/NguyenDucAnh0512</a></li>
+</ul>
+</div><div class="column" style="width:30%;">
+<p><img
+src="https://drive.google.com/uc?id=11Y4Td4A-5Y6xtoE88lvJLn0uziw5GhbB" /></p>
+</div>
+</div>
+<h1 id="цель-работы">Цель работы</h1>
+<p>Изучаем модель гармонических колебаний, решаем уравнения
+гармонического осциллятора и построим фазовый портрет с помощью
+Scilab</p>
+<h1 id="задание">Задание</h1>
+<p>Постройте фазовый портрет гармонического осциллятора и решение
+уравнения гармонического осциллятора для следующих случаев.</p>
+<h1 id="задание-1">Задание</h1>
+<ol type="1">
+<li>Колебания гармонического осциллятора без затуханий и без действий
+внешней силы <span class="math inline">\(\ddot{x}+4x=0\)</span></li>
+<li>Колебания гармонического осциллятора c затуханием и без действий
+внешней силы <span
+class="math inline">\(\ddot{x}+4\dot{x}+8x=0\)</span></li>
+<li>Колебания гармонического осциллятора c затуханием и под действием
+внешней силы <span
+class="math inline">\(\ddot{x}+3\dot{x}+4x=5sin(2t)\)</span></li>
+</ol>
+<p>На интервале <span class="math inline">\(t=[0;55]\)</span> (шаг 0.05)
+с начальными условиями <span class="math inline">\(x_{0}=0,
+y_{0}=-2\)</span></p>
+<h1 id="выполнение-задания">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-без-затуханий-и-без-действий-внешней-силы-ddotx4x0">1.
+Колебания гармонического осциллятора без затуханий и без действий
+внешней силы <span class="math inline">\(\ddot{x}+4x=0\)</span></h2>
+<ul>
+<li>Решать уравнеие <span
+class="math inline">\(\ddot{x}+4x=0\)</span></li>
+</ul>
+<p>Характерическое уравнеие: <span
+class="math inline">\(k^{2}+4=0\)</span>, решаем его, мы получим
+решения:</p>
+<p><span class="math display">\[
+\begin{cases} k_{1}=2i\\ k_{2}=-2i \end{cases}
+\]</span></p>
+<p>Поэтому мы получим общее решение: <span
+class="math inline">\(x=(C_{1}cos(2t)+C_{2}sin(2t))\)</span> (1)</p>
+<h1 id="выполнение-задания-1">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-без-затуханий-и-без-действий-внешней-силы-ddotx4x0-1">1.
+Колебания гармонического осциллятора без затуханий и без действий
+внешней силы <span class="math inline">\(\ddot{x}+4x=0\)</span></h2>
+<p>Дифференцируем (1), получим: <span
+class="math inline">\(\dot{x}=-C_{1}sin(2t)+C_{2}cos(2t)\)</span></p>
+<p>С помощью начальных условии <span class="math inline">\(x_{0}=0,
+y_{0}=-2\)</span>, мы создаём систему уравнении, чтобы найти <span
+class="math inline">\(C_{1}\)</span> и <span
+class="math inline">\(C_{2}\)</span>:</p>
+<p><span class="math display">\[
+\begin{cases} x(0)=0\\ \dot{x}(0)=-2 \end{cases} \Rightarrow
+\begin{cases} C_{1}*cos(0)+C_{2}sin(0)=0\\ -C_{1}sin(0)+C_{2}cos(0)=-2
+\end{cases} \Rightarrow \begin{cases} C_{1}=0\\ C_{2}=-2 \end{cases}
+\]</span></p>
+<p>Таким образом, мы получим общее решение: <span
+class="math inline">\(x=-2sin(2t)\)</span> (2)</p>
+<h1 id="выполнение-задания-2">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-без-затуханий-и-без-действий-внешней-силы-ddotx4x0-2">1.
+Колебания гармонического осциллятора без затуханий и без действий
+внешней силы <span class="math inline">\(\ddot{x}+4x=0\)</span></h2>
+<ul>
+<li>Построить фазовый портрет гармонического осциллятора с помощью
+Scilab, получил:</li>
+</ul>
+<figure>
+<img
+src="https://drive.google.com/uc?id=18gic8pS-vxdxkrv_VZQOnnVKETBA8Tsc"
+alt="Фазовый портрет гармонического осциллятора первого случая в зависимость x(x’)" />
+<figcaption aria-hidden="true">Фазовый портрет гармонического
+осциллятора первого случая в зависимость x(x’)</figcaption>
+</figure>
+<h1 id="выполнение-задания-3">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-без-затуханий-и-без-действий-внешней-силы-ddotx4x0-3">1.
+Колебания гармонического осциллятора без затуханий и без действий
+внешней силы <span class="math inline">\(\ddot{x}+4x=0\)</span></h2>
+<ul>
+<li>Построить фазовый портрет гармонического осциллятора с помощью
+Scilab, получил:</li>
+</ul>
+<figure>
+<img
+src="https://drive.google.com/uc?id=1zddyHVOTvWAaFXal9lhQtEYxZEI9g7Vb"
+alt="Фазовый портрет гармонического осциллятора первого случая в зависимость x(t)" />
+<figcaption aria-hidden="true">Фазовый портрет гармонического
+осциллятора первого случая в зависимость x(t)</figcaption>
+</figure>
+<h1 id="выполнение-задания-4">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-c-затуханием-и-без-действий-внешней-силы-ddotx4dotx8x0">2.
+Колебания гармонического осциллятора c затуханием и без действий внешней
+силы <span class="math inline">\(\ddot{x}+4\dot{x}+8x=0\)</span></h2>
+<ul>
+<li>Решать уравнеие <span
+class="math inline">\(\ddot{x}+4\dot{x}+8x=0\)</span></li>
+</ul>
+<p>Характерическое уравнеие: <span
+class="math inline">\(k^{2}+4k+8=0\)</span>, решаем его, мы получим
+решения:</p>
+<p><span class="math display">\[
+\begin{cases} k_{1}=-2+2i\\ k_{2}=-2-2i \end{cases}
+\]</span></p>
+<p>Поэтому мы получим общее решение: <span
+class="math inline">\(x=e^{-2t}(C_{1}cos(2t)+C_{2}sin(2t))\)</span>
+(3)</p>
+<h1 id="выполнение-задания-5">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-c-затуханием-и-без-действий-внешней-силы-ddotx4dotx8x0-1">2.
+Колебания гармонического осциллятора c затуханием и без действий внешней
+силы <span class="math inline">\(\ddot{x}+4\dot{x}+8x=0\)</span></h2>
+<p>Дифференцируем (3), получим:</p>
+<p><span
+class="math inline">\(\dot{x}=(e^{-2t}C_{1}cos(2t))&#39;+(e^{-2t}C_{2}sin(2t))&#39;\)</span></p>
+<p><span
+class="math inline">\(\dot{x}=-2e^{-2t}[(C_{1}-C_{2})cos(2t)+(C_{1}+C_{2})sin(2t)]\)</span>
+(4)</p>
+<p>С начальными условиями получим систему уравнении:</p>
+<h1 id="выполнение-задания-6">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-c-затуханием-и-без-действий-внешней-силы-ddotx4dotx8x0-2">2.
+Колебания гармонического осциллятора c затуханием и без действий внешней
+силы <span class="math inline">\(\ddot{x}+4\dot{x}+8x=0\)</span></h2>
+<p><span class="math display">\[
+\begin{cases} x(0)=0\\ \dot{x}(0)=-2 \end{cases} \Leftrightarrow
+\begin{cases} e^{-2*0}(C_{1}cos(2*0)+C_{2}sin(2*0))=0\\
+-2e^{-2*0}[(C_{1}-C_{2})cos(2*0)+(C_{1}+C_{2})sin(2*0)] \end{cases}
+\]</span></p>
+<p><span class="math display">\[
+\Leftrightarrow \begin{cases} C_{1}=0\\ -2(C_{1}-C_{2})=-2 \end{cases}
+\Leftrightarrow \begin{cases} C_{1}=0\\ C_{2}=-1 \end{cases}
+\]</span></p>
+<p>И мы получим решение: <span
+class="math inline">\(x=-e^{-2t}sin(2t)\)</span></p>
+<h1 id="выполнение-задания-7">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-c-затуханием-и-без-действий-внешней-силы-ddotx4dotx8x0-3">2.
+Колебания гармонического осциллятора c затуханием и без действий внешней
+силы <span class="math inline">\(\ddot{x}+4\dot{x}+8x=0\)</span></h2>
+<ul>
+<li>Построить фазовый портрет гармонического осциллятора с помощью
+Scilab, получил:</li>
+</ul>
+<figure>
+<img
+src="https://drive.google.com/uc?id=1jq2NTKRjZatC9U0hFmRA0_baYT34gsoF"
+alt="Фазовый портрет гармонического осциллятора второго случая в зависимость x(x’)" />
+<figcaption aria-hidden="true">Фазовый портрет гармонического
+осциллятора второго случая в зависимость x(x’)</figcaption>
+</figure>
+<h1 id="выполнение-задания-8">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-c-затуханием-и-без-действий-внешней-силы-ddotx4dotx8x0-4">2.
+Колебания гармонического осциллятора c затуханием и без действий внешней
+силы <span class="math inline">\(\ddot{x}+4\dot{x}+8x=0\)</span></h2>
+<ul>
+<li>Построить фазовый портрет гармонического осциллятора с помощью
+Scilab, получил:</li>
+</ul>
+<figure>
+<img
+src="https://drive.google.com/uc?id=1A21yICveFEEKvyr5gi4toz0HhLQX4v5W"
+alt="Фазовый портрет гармонического осциллятора второго случая в зависимость x(t)" />
+<figcaption aria-hidden="true">Фазовый портрет гармонического
+осциллятора второго случая в зависимость x(t)</figcaption>
+</figure>
+<h1 id="выполнение-задания-9">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-c-затуханием-и-под-действием-внешней-силы-ddotx3dotx4x5sin2t">3.
+Колебания гармонического осциллятора c затуханием и под действием
+внешней силы <span
+class="math inline">\(\ddot{x}+3\dot{x}+4x=5sin(2t)\)</span></h2>
+<ul>
+<li>Решать уравнеие <span
+class="math inline">\(\ddot{x}+3\dot{x}+4x=5sin(2t)\)</span></li>
+</ul>
+<p>Сначала нам нужно решать однородные линейные дифференцирующие
+уравнения <span class="math inline">\(\ddot{x}+3\dot{x}+4x=0\)</span>,
+чтобы найти общее решение однородного уравнения:</p>
+<p>Характерическое уравнеие: <span
+class="math inline">\(k^{2}+3k+4=0\)</span>, решаем его, мы получим
+решения:</p>
+<h1 id="выполнение-задания-10">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-c-затуханием-и-под-действием-внешней-силы-ddotx3dotx4x5sin2t-1">3.
+Колебания гармонического осциллятора c затуханием и под действием
+внешней силы <span
+class="math inline">\(\ddot{x}+3\dot{x}+4x=5sin(2t)\)</span></h2>
+<p><span class="math display">\[
+\begin{cases} k_{1}=\frac{-3+\sqrt{7}i}{2}\\
+k_{2}=\frac{-3-\sqrt{7}i}{2} \end{cases}
+\]</span></p>
+<p>Мы получим общее решение однородного уравнения:</p>
+<p><span
+class="math inline">\(x=e^{-\frac{3}{2}t}(C_{1}cos(\frac{\sqrt{7}}{2}t)+C_{2}sin(\frac{\sqrt{7}}{2}t))\)</span>
+(5)</p>
+<h1 id="выполнение-задания-11">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-c-затуханием-и-под-действием-внешней-силы-ddotx3dotx4x5sin2t-2">3.
+Колебания гармонического осциллятора c затуханием и под действием
+внешней силы <span
+class="math inline">\(\ddot{x}+3\dot{x}+4x=5sin(2t)\)</span></h2>
+<p>Затем мы наидём частное решение неоднородного уравнения.</p>
+<p>Видно, что <span class="math inline">\(m=0, n=2, m \ne \alpha, n \ne
+\beta \Rightarrow\)</span> решение имеет вид:</p>
+<p><span class="math inline">\(x=e^{mx}(Acos(nt)+Bsin(nt))\)</span>
+(6)</p>
+<h1 id="выполнение-задания-12">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-c-затуханием-и-под-действием-внешней-силы-ddotx3dotx4x5sin2t-3">3.
+Колебания гармонического осциллятора c затуханием и под действием
+внешней силы <span
+class="math inline">\(\ddot{x}+3\dot{x}+4x=5sin(2t)\)</span></h2>
+<p>Поставим <span class="math inline">\(m=0 , n=2\)</span> в (6),
+получим <span class="math inline">\(x=Acos(2t)+Bsin(2t)\)</span>.
+Дифференцируем этот уравнение, получим:</p>
+<p><span class="math inline">\(\dot{x}=-2Asin(2t)+2Bcos(2t)\)</span></p>
+<p><span
+class="math inline">\(\ddot{x}=-4Acos(2t)-4Bsin(2t)\)</span></p>
+<h1 id="выполнение-задания-13">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-c-затуханием-и-под-действием-внешней-силы-ddotx3dotx4x5sin2t-4">3.
+Колебания гармонического осциллятора c затуханием и под действием
+внешней силы <span
+class="math inline">\(\ddot{x}+3\dot{x}+4x=5sin(2t)\)</span></h2>
+<p>Поставим <span class="math inline">\(\dot{x}\)</span> и <span
+class="math inline">\(\ddot{x}\)</span> в уравнеие <span
+class="math inline">\(\ddot{x}+3\dot{x}+4x=5sin(2t)\)</span>,
+получим:</p>
+<p><span
+class="math inline">\((-4Acos(2t)-4Bsin(2t))+3(-2Asin(2t)+2Bcos(2t))+4(Acos(2t)+Bsin(2t))=5sin(2t)\)</span></p>
+<p><span class="math inline">\(\Leftrightarrow 6Bcos(2t)-6Asin(2t) =
+5sin(2t) \Leftrightarrow \begin{cases} A=-\frac{5}{6}\\ B=0
+\end{cases}\)</span></p>
+<h1 id="выполнение-задания-14">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-c-затуханием-и-под-действием-внешней-силы-ddotx3dotx4x5sin2t-5">3.
+Колебания гармонического осциллятора c затуханием и под действием
+внешней силы <span
+class="math inline">\(\ddot{x}+3\dot{x}+4x=5sin(2t)\)</span></h2>
+<p>Так мы получим частное решение неоднородного уравнения: <span
+class="math inline">\(x=-\frac{5}{6}cos(2t)\)</span></p>
+<p>Таким образом, общее решение неоднородного уравнения равно сумме
+общего решения однородного уравнения и частного решения неоднородного
+уравнения:</p>
+<p><span
+class="math inline">\(x=e^{-\frac{3}{2}t}(C_{1}cos(\frac{\sqrt{7}}{2}t)+C_{2}sin(\frac{\sqrt{7}}{2}t))-\frac{5}{6}cos(2t)\)</span>
+(7)</p>
+<h1 id="выполнение-задания-15">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-c-затуханием-и-под-действием-внешней-силы-ddotx3dotx4x5sin2t-6">3.
+Колебания гармонического осциллятора c затуханием и под действием
+внешней силы <span
+class="math inline">\(\ddot{x}+3\dot{x}+4x=5sin(2t)\)</span></h2>
+<p>Чтобы найти конкретное значение <span
+class="math inline">\(C_{1}\)</span> и <span
+class="math inline">\(C_{2}\)</span>, мы дифференцируем (7) и с
+начальными условиями, получим:</p>
+<p><span
+class="math inline">\(\dot{x}=-\frac{e^{-\frac{3t}{2}}((9C_{2}+3\sqrt{7}C_{1})sin(\frac{\sqrt{7}t}{2})+(9C_{1}-3\sqrt{7}C_{2})cos(\frac{\sqrt{7}t}{2})-10e^{\frac{3t}{2}}sin(2t))}{6}\)</span>
+(8)</p>
+<p>От (7), (8) мы создаём систему уравнении:</p>
+<h1 id="выполнение-задания-16">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-c-затуханием-и-под-действием-внешней-силы-ddotx3dotx4x5sin2t-7">3.
+Колебания гармонического осциллятора c затуханием и под действием
+внешней силы <span
+class="math inline">\(\ddot{x}+3\dot{x}+4x=5sin(2t)\)</span></h2>
+<p><span class="math display">\[
+\begin{cases} x(0)=0\\ \dot{x}(0)=-2 \end{cases} \Leftrightarrow
+\begin{cases} C_{1}-\frac{5}{6}=0\\ 9C_{1}-3\sqrt{7}C_{2}=-2 \end{cases}
+\Leftrightarrow \begin{cases} C_{1}=\frac{5}{6}\\
+C_{2}=\frac{19\sqrt{7}}{42} \end{cases}
+\]</span></p>
+<p>Общее решение неоднородного уравнения:</p>
+<p><span
+class="math inline">\(x=e^{-\frac{3}{2}t}(\frac{5}{6}cos(\frac{\sqrt{7}}{2}t)+\frac{19\sqrt{7}}{42}sin(\frac{\sqrt{7}}{2}t))-\frac{5}{6}cos(2t)\)</span></p>
+<h1 id="выполнение-задания-17">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-c-затуханием-и-под-действием-внешней-силы-ddotx3dotx4x5sin2t-8">3.
+Колебания гармонического осциллятора c затуханием и под действием
+внешней силы <span
+class="math inline">\(\ddot{x}+3\dot{x}+4x=5sin(2t)\)</span></h2>
+<ul>
+<li>Построить фазовый портрет гармонического осциллятора с помощью
+Scilab, получил:</li>
+</ul>
+<figure>
+<img
+src="https://drive.google.com/uc?id=1CIkkURPDIpzl388VqbILvmuDFu46vfst"
+alt="Фазовый портрет гармонического осциллятора третьего случая в зависимость x(x’)" />
+<figcaption aria-hidden="true">Фазовый портрет гармонического
+осциллятора третьего случая в зависимость x(x’)</figcaption>
+</figure>
+<h1 id="выполнение-задания-18">Выполнение задания</h1>
+<h2
+id="колебания-гармонического-осциллятора-c-затуханием-и-под-действием-внешней-силы-ddotx3dotx4x5sin2t-9">3.
+Колебания гармонического осциллятора c затуханием и под действием
+внешней силы <span
+class="math inline">\(\ddot{x}+3\dot{x}+4x=5sin(2t)\)</span></h2>
+<ul>
+<li>Построить фазовый портрет гармонического осциллятора с помощью
+Scilab, получил:</li>
+</ul>
+<figure>
+<img
+src="https://drive.google.com/uc?id=1LxUOISo7qbc3TA4317edLOAAhAUnBKs5"
+alt="Фазовый портрет гармонического осциллятора третьего случая в зависимость x(t)" />
+<figcaption aria-hidden="true">Фазовый портрет гармонического
+осциллятора третьего случая в зависимость x(t)</figcaption>
+</figure>
+<h1 id="вывод">Вывод</h1>
+<p>После лабораторной работы, я познакомился с моделей гармонических
+колебаний, получил навыки по решению уравнения гармонического
+осциллятора и приобрел построить фазовый портрет с помощью Scilab.</p>
+</body>
+</html>
